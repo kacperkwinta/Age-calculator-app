@@ -1,0 +1,31 @@
+///////////////////////////////
+/// COLORS
+///////////////////////////////
+$color-primary-1: hsl(259, 100%, 65%);
+$color-primary-2: hsl(0, 100%, 67%);
+
+$color-neutral-1: hsl(0, 0%, 100%);
+$color-neutral-2: hsl(0, 0%, 94%);
+$color-neutral-3: hsl(0, 0%, 86%);
+$color-neutral-4: hsl(0, 1%, 44%);
+$color-neutral-5: hsl(0, 0%, 8%);
+
+///////////////////////////////
+/// RESET
+///////////////////////////////
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+	font-family: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	font-family: "Poppins", sans-serif;
+}
+
+///////////////////////////////
+/// BOX
+///////////////////////////////
