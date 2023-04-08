@@ -29,3 +29,48 @@ html {
 ///////////////////////////////
 /// BOX
 ///////////////////////////////
+.box {
+	margin: 10rem auto;
+	width: max-content;
+	background-color: $color-neutral-1;
+	padding: 3.2rem;
+	border-radius: 1rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.wrapper-inputs {
+	display: flex;
+	gap: 2.4rem;
+
+	span {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+	}
+}
+
+input {
+	width: 9.6rem;
+	border-radius: 4px;
+	border: 1px solid $color-neutral-3;
+	padding: 0 1.2rem;
+	font-size: 3rem;
+}
+
+// delete default input number controls
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+label {
+	text-transform: uppercase;
+	color: $color-neutral-4;
+	font-size: 1.2rem;
+	letter-spacing: 3px;
+}
+
+.wrapper-button {
+	
+}
