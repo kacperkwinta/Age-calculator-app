@@ -39,7 +39,7 @@ body {
 	width: 64rem;
 	background-color: $color-neutral-1;
 	padding: 3.2rem;
-	border-radius: 1rem;
+	border-radius: 3rem;
 	border-bottom-right-radius: 20rem;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -95,15 +95,27 @@ label {
 	background-color: $color-neutral-2;
 }
 
+.line--hidden {
+	display: none;
+}
+
 .btn {
 	border: none;
 	border-radius: 50%;
-	height: 8rem;
-	width: 9.25rem;
+	padding: 1.6rem;
 	background-color: $color-primary-1;
 	cursor: pointer;
 	transition: all 0.1s ease;
 	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	img {
+		height: 4rem;
+		width: 4rem;
+	}
 
 	&:hover {
 		background-color: $color-neutral-5;
@@ -129,5 +141,34 @@ label {
 
 .attribution {
 	text-align: center;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
+}
+
+///////////////////////////////
+/// BELOW 600 PX
+@media only screen and (max-width: 37.5em) {
+	html {
+		font-size: 50%;
+	}
+
+	.wrapper-inputs {
+		justify-content: center;
+	}
+
+	.wrapper-button {
+		margin: 2.4rem auto;
+
+		.line--hidden {
+			display: block;
+		}
+	}
+
+	.btn {
+		padding: 2rem;
+
+		img {
+			height: 3.2rem;
+			width: 3.2rem;
+		}
+	}
 }

@@ -26,17 +26,17 @@
 				<div class="wrapper-inputs">
 					<span>
 						<label for="day">Day</label>
-						<input type="number" name="day" id="day" />
+						<input type="number" name="day" id="day" placeholder="DD" />
 					</span>
 
 					<span>
 						<label for="month">Month</label>
-						<input type="number" name="month" id="month" />
+						<input type="number" name="month" id="month" placeholder="MM" />
 					</span>
 
 					<span>
 						<label for="year">Year</label>
-						<input type="number" name="year" id="year" />
+						<input type="number" name="year" id="year" placeholder="YYYY" />
 					</span>
 				</div>
 				<div class="wrapper-button">
@@ -44,6 +44,7 @@
 					<button class="btn">
 						<img src="assets/images/icon-arrow.svg" alt="" class="btn-icon" />
 					</button>
+					<div class="line line--hidden"></div>
 				</div>
 				<div class="wrapper-result">
 					<p><span class="years">--</span> years</p>
@@ -61,7 +62,9 @@
 			>.
 		</div>
 
-		<script src="js/script.js"></script>
 		<script src="js/dayjs.min.js"></script>
+		<script>
+			console.log(dayjs().format());
+		</script>
 	</body>
 </html>
