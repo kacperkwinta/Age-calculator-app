@@ -64,7 +64,28 @@
 
 		<script src="js/dayjs.min.js"></script>
 		<script>
-			console.log(dayjs().format());
+			const day = document.getElementById("day");
+			const month = document.getElementById("month");
+			const year = document.getElementById("year");
+
+			const dayOutput = document.querySelector(".days");
+			const monthOutput = document.querySelector(".months");
+			const yearOutput = document.querySelector(".years");
+
+			const btn = document.querySelector(".btn");
+
+			btn.addEventListener("click", function () {
+				const inputDate = dayjs(`${year.value}-${month.value}-${day.value}`);
+				const now = dayjs();
+
+				const years = now.diff(inputDate, "year");
+				const months = now.diff(inputDate, "month") % 12;
+				const days = now.diff(inputDate, "day") % 30;
+
+				yearOutput.innerHTML = years;
+				monthOutput.innerHTML = months;
+				dayOutput.innerHTML = days;
+			});
 		</script>
 	</body>
 </html>
