@@ -166,6 +166,15 @@ label {
 	html {
 		font-size: 50%;
 	}
+	body {
+		padding: 1rem;
+	}
+
+	.box {
+		margin: 12.6rem auto;
+		margin-bottom: 2.4rem;
+		width: 100%;
+	}
 
 	.wrapper-inputs {
 		justify-content: center;
@@ -186,5 +195,22 @@ label {
 			height: 3.2rem;
 			width: 3.2rem;
 		}
+	}
+}
+
+///////////////////////////////
+/// BELOW 375 PX
+@media only screen and (max-width: 23.4375em) {
+	html {
+		font-size: 45%;
+	}
+
+	input {
+		max-width: 9.6rem;
+		font-size: 2.4rem;
+	}
+
+	.wrapper-result {
+		font-size: 6rem;
 	}
 }
